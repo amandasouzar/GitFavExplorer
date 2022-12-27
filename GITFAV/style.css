@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #000;
+    --tf-color: #E1E1E6;
+    --bg-second-color: #06181C;
+
+}
+body {
+    font-size: 1.6rem;
+    font-family:'Roboto', sans-serif;
+    color: var(--tf-color);
+    background-color: var(--bg-color);
+
+    padding: 11.5rem 16rem;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 8.7rem;
+}
+.SearchTool {
+    display: flex;
+    gap: .8rem;
+    
+}
+.SearchTool input {
+    background-color: var(--bg-second-color);
+    padding: 1.8rem;
+    min-width: 46.3rem;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+}
+.SearchTool input::placeholder {
+    color: #7C7C8A;
+    font-weight: 400;
+}
+.SearchTool button {
+
+    background: #065E7C;
+    border-radius: 5px;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding: 1.2rem 3.2rem;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.4rem;
+
+    color: #fff;
+
+    cursor: pointer;
+}
+.SearchTool button .hide {
+    display: none;
+}
+.SearchTool button:hover .hide {
+    display: block;
+}
+.SearchTool button:hover {
+    background-color: white;
+    color: #065E7C;
+}
+.SearchTool button:hover .nohide {
+    display: none;
+}
+.SearchTool .SR-Only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+}
+main {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #4A808C;
+    border-radius: 1.2rem;
+
+}
+
+.nocontent {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+    justify-content: center;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+
+    color: #4E5455;
+
+    margin-top: 12rem;
+    margin-bottom: 21rem;
+}
+.noview {
+    display: none;
+}
+table {
+    border-spacing: 0;
+  
+    width: 100%;
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+table thead {
+    background-color: #092D38;
+    
+}
+table thead th:first-child {
+    border-top-left-radius: 1.2rem;
+}
+table thead th:last-child {
+    border-top-right-radius: 1.2rem;
+}
+table thead th, td {
+    text-align: center;
+    padding: 1.6rem;
+}
+table tbody .UserInfo {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    
+    padding-right: 10rem;
+    text-align: left;
+}
+table tbody .UserInfo img {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+table tbody .UserInfo a {
+    text-decoration: none;
+    color: var(--tf-color);
+    
+    cursor: pointer;
+}
+table tbody .UserInfo a p {
+    font-weight: bold;
+
+    width: 12rem;
+}
+table tbody .RemoveItem {
+    color: #F75A68;
+    cursor: pointer;
+}
+table tbody tr:last-child .RemoveItem:last-of-type {
+    border-bottom-right-radius: 1.2rem;
+}
+table tbody tr:last-child .UserInfo {
+    border-bottom-left-radius: 1.2rem;
+    overflow: hidden;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: rgba(6, 22, 27, 0.5);
+}
+table tbody tr:nth-child(even) {
+    background-color: #06181C;
+}
+tbody {
+    display: block;
+    overflow-y: auto;
+    min-height: 8.2rem;
+    max-height: 52rem;
+}
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}   
+tbody::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+tbody::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+tbody::-webkit-scrollbar-thumb {
+    background: #4A808C;
+    border-radius: 10px; */
+}
